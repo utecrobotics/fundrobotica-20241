@@ -31,5 +31,8 @@ def fkine_ur3(q):
     T5 = 0
     T6 = 0
     # Efector final con respecto a la base
-    T = np.zeros((4,4))
+    T = np.array([[0,0,0,0],
+                  [0,0,0,0],
+                  [0,0,0,0],
+                  [0,0,0,0]])
     return T
