@@ -16,7 +16,7 @@ def dh(d, theta, a, alpha):
     
     
 
-def fkine_ur5(q):
+def fkine_ur10(q):
     """
     Calcular la cinematica directa del robot UR5 dados sus valores articulares. 
     q es un vector numpy de la forma [q1, q2, q3, q4, q5, q6]
@@ -35,7 +35,7 @@ def fkine_ur5(q):
     return T
 
 
-def jacobian_ur5(q, delta=0.0001):
+def jacobian_ur10(q, delta=0.0001):
     """
     Jacobiano analitico para la posicion. Retorna una matriz de 3x6 y toma como
     entrada el vector de configuracion articular q=[q1, q2, q3, q4, q5, q6]
@@ -59,7 +59,7 @@ def jacobian_ur5(q, delta=0.0001):
     return J
 
 
-def ikine_ur5(xdes, q0):
+def ikine_ur10(xdes, q0):
     """
     Calcular la cinematica inversa de UR5 numericamente a partir de la configuracion articular inicial de q0. 
     Emplear el metodo de newton
