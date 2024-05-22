@@ -11,7 +11,7 @@ if __name__ == '__main__':
     
     rospy.init_node("test1", disable_signals=True)
 
-    robot_client = actionlib.SimpleActionClient('eff_joint_traj_controller/follow_joint_trajectory', FollowJointTrajectoryAction)
+    robot_client = actionlib.SimpleActionClient('follow_joint_trajectory', FollowJointTrajectoryAction)
 
     print("Waiting for server...")
     robot_client.wait_for_server()
